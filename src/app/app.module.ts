@@ -3,12 +3,16 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
-import { AppRoutingModule } from './app.routing';
+import { AppRoutingModule } from './app-routing.module';
 import { VacancyModule } from './pages/vacancy/vacancy.module';
 import { SharedModule } from './shared/shared.module';
-import {CoreModule} from './core/core.module';
+import { CoreModule } from './core/core.module';
 import { LoginModule } from './pages/login/login.module';
 import { AuthInterceptor } from './core/auth/auth.interceptor';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { BaseModule } from './layout/base/base.module';
+import { SidebarComponent } from './layout/components/sidebar/sidebar.component';
+import { TopbarComponent } from './layout/components/topbar/topbar.component';
 
 
 @NgModule({
@@ -19,11 +23,11 @@ import { AuthInterceptor } from './core/auth/auth.interceptor';
     BrowserModule,
     HttpClientModule,
     RouterModule,
-    VacancyModule,
     CoreModule,
-    AppRoutingModule,
     SharedModule,
-    LoginModule
+    LoginModule,
+    BaseModule,
+    AppRoutingModule
   ],
   providers: [
     { 
