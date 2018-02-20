@@ -1,3 +1,5 @@
+@import '~main.scss';
+
 .fill-remaining-space {
     /* This fills the remaining space, by using flexbox. 
        Every toolbar row uses a flexbox row layout. */
@@ -5,9 +7,17 @@
   }
 
 mat-toolbar a:link {
-  color: white;
+  color: $color-primary-font-0;
 }
 
 mat-toolbar a:visited {
-  color: white;
+  color: $color-primary-font-0;
+}
+
+mat-toolbar {
+  background-color: $color-primary-0;
+}
+
+mat-toolbar span {
+  color: $color-primary-font-0;
 }
