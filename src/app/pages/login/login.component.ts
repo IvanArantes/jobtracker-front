@@ -32,7 +32,7 @@ export class LoginComponent {
         .subscribe(
           () => {
             console.log('User is logged in');
-            this.router.navigateByUrl('/vacancies');
+            this.router.navigate(['/home']);
           }
         );
     }
