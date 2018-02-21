@@ -8,7 +8,6 @@ import { Link } from '../../../domain/model/link.model';
 })
 export class SidebarComponent implements OnInit {
   links: Link[];
-
   constructor() {
     this.links = [
       new Link('/home/vacancies', 'Vacancies')

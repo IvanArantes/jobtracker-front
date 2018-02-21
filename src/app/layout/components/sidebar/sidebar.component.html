@@ -1,10 +1,11 @@
   <mat-sidenav-container>
-    <mat-sidenav #sidenav mode="side" opened>
+    <mat-sidenav #sidenav mode="side" [(opened)]="opened">
       <mat-list>
         <a mat-list-item routerLink="{{link.route}}" routerLinkActive="active" *ngFor="let link of links"> {{ link.title }} </a>
       </mat-list>
     </mat-sidenav>
     <mat-sidenav-content>
+      <button mat-button (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></button>
       <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
