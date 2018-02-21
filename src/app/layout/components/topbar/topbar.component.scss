@@ -1,3 +1,11 @@
+@import '~main.scss';
+
 .fill-space {
     flex: 1 1 auto;
+}
+
+.mat-toolbar {
+    background-color: $color-primary-0;
+    color: $color-primary-font-0;
+    box-shadow: 2px black;
 }

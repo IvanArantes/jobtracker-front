@@ -11,12 +11,13 @@ import { SkillService } from '../../shared/service/skill.service';
 @NgModule({
   imports: [
     CommonModule,
-    VacancyRoutingModule,
-    SharedModule
+    SharedModule,
+    VacancyRoutingModule
   ],
   declarations: [
-  CreateVacancyComponent,
-  ListVacancyComponent],
+    CreateVacancyComponent,
+    ListVacancyComponent
+  ],
   providers: [VacancyService, SkillService]
 })
 export class VacancyModule { }

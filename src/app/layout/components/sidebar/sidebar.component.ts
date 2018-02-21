@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Link } from '../../../domain/model/link.model';
 
 @Component({
   selector: 'app-sidebar',
@@ -6,8 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
+  links: Link[];
 
-  constructor() { }
+  constructor() {
+    this.links = [
+      new Link('/home/vacancies', 'Vacancies')
+    ];
+  }
 
   ngOnInit() {
   }
