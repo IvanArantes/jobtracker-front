@@ -22,6 +22,9 @@ import { TopbarComponent } from '../components/topbar/topbar.component';
     BaseComponent,
     SidebarComponent,
     TopbarComponent
+  ],
+  providers: [
+    
   ]
 })
 export class BaseModule { }

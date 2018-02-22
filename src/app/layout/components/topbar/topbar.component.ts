@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-topbar',
   templateUrl: './topbar.component.html',
   styleUrls: ['./topbar.component.scss']
 })
-export class TopbarComponent implements OnInit {
+export class TopbarComponent {
+
+  @Output() toggle = new EventEmitter();
 
   constructor() { }
 
-  ngOnInit() {
+  public toggleMenu() {
+    this.toggle.emit();
   }
-
 }
