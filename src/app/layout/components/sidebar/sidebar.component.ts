@@ -21,7 +21,7 @@ export class SidebarComponent implements OnInit {
   }
 
   toggleMenu() {
-    this.sidenav.close();
+    this.sidenav.toggle();
   }
 
 }

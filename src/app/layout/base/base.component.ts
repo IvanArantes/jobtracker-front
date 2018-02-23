@@ -8,12 +8,14 @@ import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
   styleUrls: ['./base.component.scss']
 })
 export class BaseComponent implements AfterViewInit {
-
+  //Get the child component to be used in the parent.
   @ViewChild(SidebarComponent)
   private sidebarComponent: SidebarComponent;
 
 
   ngAfterViewInit(): void {
+    //toggle the menu when the child(SidebarComponent) loads.
+    //this.toggleMenu();
   }
   constructor() { }
 

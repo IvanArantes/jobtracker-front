@@ -12,6 +12,7 @@ export class TopbarComponent {
   constructor() { }
 
   public toggleMenu() {
+    //Emit event when user clicks the menu button. This event is catched in baseComponent
     this.toggle.emit();
   }
 }
