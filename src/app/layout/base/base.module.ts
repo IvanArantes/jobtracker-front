@@ -15,13 +15,16 @@ import { TopbarComponent } from '../components/topbar/topbar.component';
     CommonModule,
     SharedModule,
     RouterModule,
-    VacancyModule,
-    BaseRoutingModule
+    BaseRoutingModule,
+    VacancyModule
   ],
   declarations: [
     BaseComponent,
     SidebarComponent,
     TopbarComponent
+  ],
+  providers: [
+    
   ]
 })
 export class BaseModule { }
