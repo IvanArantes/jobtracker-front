@@ -1,0 +1,71 @@
+<header>
+  <div class="form-title-row">
+  <h1>Job Tracker </h1>
+  </div>
+</header>
+
+<div class="main-content">
+
+  <form [formGroup]="form" class="form-register" method="post" action="#">
+
+    <div class="form-register-with-email">
+
+      <div class="form-white-background">
+
+        <div class="form-title-row">
+          <h1>Create an account</h1>
+        </div>
+
+        <div class="form-row">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name"  formControlName="name">
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label>
+            <span>Email</span>
+            <input type="email" name="email"formControlName="email" >
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label>
+            <span>Password</span>
+            <input type="password" name="password"  formControlName="password">
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label class="form-checkbox">
+            <input type="checkbox" name="checkbox" checked>
+            <span>I agree to the <a href="#">terms and conditions</a></span>
+          </label>
+        </div>
+
+        <div class="form-row">
+          <button type="submit" (click)="signUp()">Register</button>
+        </div>
+
+      </div>
+
+      <a href="/login" class="form-log-in-with-existing">Already have an account? Login here &rarr;</a>
+
+    </div>
+
+    <div class="form-sign-in-with-social">
+
+      <div class="form-row form-title-row">
+        <span class="form-title">Sign in with</span>
+      </div>
+
+      <a href="#" class="form-google-button">Google</a>
+      <a href="#" class="form-facebook-button">Facebook</a>
+      <a href="#" class="form-twitter-button">Twitter</a>
+
+    </div>
+
+  </form>
+
+</div>

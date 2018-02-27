@@ -13,9 +13,9 @@ export class AuthService {
 
   }
 
-  login(username: string, password: string ) : Observable<Auth> {
+  login(email: string, password: string ): Observable<Auth> {
     const url = `${this.restService.getUrl()}auth/login`;
-    return this.http.post<Auth>(url, {username, password})
+    return this.http.post<Auth>(url, {email, password})
       .do(res => this.setSession(res))
       .shareReplay();
   }
