@@ -1,8 +1,10 @@
-<mat-sidenav-container class="example-container">
-  <mat-sidenav mode="side" opened>
-    <nav>
-      <a routerLink="/vacancies" routerLinkActive="active">Vacancies</a>
-    </nav>
-  </mat-sidenav>
-  <mat-sidenav-content>Main test</mat-sidenav-content>
-</mat-sidenav-container>
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side" opened>
+      <mat-list>
+        <a mat-list-item routerLink="{{link.route}}" routerLinkActive="active" *ngFor="let link of links"> {{ link.title }} </a>
+      </mat-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>

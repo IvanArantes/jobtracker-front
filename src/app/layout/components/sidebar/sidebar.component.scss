@@ -1,0 +1,33 @@
+@import '~main.scss';
+
+mat-sidenav-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+mat-sidenav-content {
+    margin-left: 30px;
+}
+
+mat-sidenav {
+    box-shadow: 5px 0px 5px grey;
+    display: flex;
+    justify-content: left;
+    width: 200px;
+    background: rgba(255, 255, 255, 0.863);
+}
+
+mat-list {
+    width: 100%;
+}
+mat-list a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    border-bottom-color: rgba(0, 0, 0, 0.445);
+}
+
+mat-list a:hover {
+    background-color: $color-primary-1;
+}

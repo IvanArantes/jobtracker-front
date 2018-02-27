@@ -11,7 +11,6 @@ export class SkillService {
   constructor(private http: HttpClient) { }
 
   getAll(): Observable<Skill[]> {
-      console.log('is here');
     return this.http.get('//localhost:8080/skills')
     .map(resp => resp as Skill[]);
   }
