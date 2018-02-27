@@ -6,7 +6,7 @@
 
 <div class="main-content">
 
-  <form class="form-register" method="post" action="#">
+  <form [formGroup]="form" class="form-register" method="post" action="#">
 
     <div class="form-register-with-email">
 
@@ -19,21 +19,21 @@
         <div class="form-row">
           <label>
             <span>Name</span>
-            <input type="text" name="name">
+            <input type="text" name="name"  formControlName="name">
           </label>
         </div>
 
         <div class="form-row">
           <label>
             <span>Email</span>
-            <input type="email" name="email">
+            <input type="email" name="email"formControlName="email" >
           </label>
         </div>
 
         <div class="form-row">
           <label>
             <span>Password</span>
-            <input type="password" name="password">
+            <input type="password" name="password"  formControlName="password">
           </label>
         </div>
 
@@ -45,7 +45,7 @@
         </div>
 
         <div class="form-row">
-          <button type="submit">Register</button>
+          <button type="submit" (click)="signUp()">Register</button>
         </div>
 
       </div>
