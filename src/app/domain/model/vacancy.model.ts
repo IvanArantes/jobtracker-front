@@ -10,5 +10,7 @@ export class Vacancy{
 	public url: String;
 	public descricao: String;
 	public dtVacancy: Date;
+	public curriculum: File;
+	public coverLetter: String;
 	public dtCreation: Date;
 }

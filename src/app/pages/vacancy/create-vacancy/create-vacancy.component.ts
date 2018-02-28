@@ -33,6 +33,8 @@ export class CreateVacancyComponent implements OnInit {
         quality: '',
         url: '',
         description: '',
+        curriculum: '',
+        coverLetter: '',
         dtVacancy: ['', Validators.required]
 
     })
