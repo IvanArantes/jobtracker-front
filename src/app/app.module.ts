@@ -10,11 +10,13 @@ import {LoginModule} from './pages/login/login.module';
 import {AuthInterceptor} from './core/auth/auth.interceptor';
 import {BaseModule} from './layout/base/base.module';
 import {SignUpModule} from "./pages/sign-up/sign-up.module";
+import { FileUploadComponent } from './layout/components/file-upload/file-upload.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FileUploadComponent
   ],
   imports: [
     BrowserModule,
